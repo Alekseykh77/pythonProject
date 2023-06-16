@@ -4,7 +4,7 @@ from prime_or_composite import is_prime
 
 if __name__ == "__main__":
     # Triangle
-    a, b, c = (float(input(f"Введите {i + 1} сторону треугольника ")) for i in range(3))
+    a, b, c = (float(input(f"Введите длину {i + 1} стороны треугольника ")) for i in range(3))
     any_triangle = Triangle(a, b, c)
 
     try:
@@ -12,7 +12,7 @@ if __name__ == "__main__":
     except AttributeError:
         print("Попробуйте ещё раз")
 
-    #is_prime
+    # is_prime
     number: int = -1
     while number < 0 or number > 100000:
         number = int(input("Введите число от 0 до 100000 "))
