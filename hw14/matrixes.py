@@ -82,9 +82,9 @@ class Matrix:
             return None
 
         result = Matrix(self.__rows, other.__cols)
-        for i in range(result.__rows):
-            for j in range(result.__cols):
-                for k in range(result.__cols):
-                    result.__matrix[i][j] = self.__matrix[i][k] * other.__matrix[j][k]
+        for i in range(self.__rows):
+            for j in range(other.__cols):
+                for k in range(self.__cols):
+                    result.__matrix[i][j] += self.__matrix[i][k] * other.__matrix[k][j]
 
         return result
