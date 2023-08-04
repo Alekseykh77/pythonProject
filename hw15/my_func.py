@@ -43,5 +43,5 @@ if __name__ == '__main__':
     print(get_number(12345678, 8))
     print(get_number(12345678, 16))
     print(get_number(12345678, 0))
-    print(get_number(12345678, -1))
+    print(get_number(12345678, -2))
     parser_func()
